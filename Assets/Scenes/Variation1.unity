@@ -192,7 +192,6 @@ GameObject:
   - component: {fileID: 534669907}
   - component: {fileID: 534669906}
   - component: {fileID: 534669903}
-  - component: {fileID: 534669909}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -216,7 +215,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 1, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -271,12 +270,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe9d7cb1ff04cb4ebfdc5419755e800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDist: 0.0029
-  maxSteps: 780
-  maxDist: 380
+  minDist: 0.0037
+  maxSteps: 766
+  maxDist: 531
   eyeResolution: 2
-  computedW: 3836
-  computedH: 1998
+  computedW: 3812
+  computedH: 1974
   dithering: 10.72
   heatMap: 0
   stereoSeparationFactor: 2.97
@@ -316,7 +315,7 @@ MonoBehaviour:
   kF0: 0
   doGlow0: 1
   glowColor0: {r: 1, g: 1, b: 1, a: 0}
-  glowCoef0: 6.85
+  glowCoef0: 4.62
   glowRemap0: 0.4
   useAlgoColorGlow0: 0
   doAoSSS0: 1
@@ -384,7 +383,7 @@ MonoBehaviour:
   algoFloat1: 0
   algoFloat2: 0
   algoFloat3: 0
-  mi: 8
+  mi: 6
   nearClip: 2
 --- !u!114 &534669907
 MonoBehaviour:
@@ -461,24 +460,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!95 &534669909
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f81e275efaf637e48b75b4791f266586, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &607312355
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,54 +505,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &711847916
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 711847918}
-  - component: {fileID: 711847917}
-  m_Layer: 0
-  m_Name: CameraHolderVertical
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!95 &711847917
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 711847916}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe1c353829a0b544a87ee0009dfe2a5c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &711847918
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 711847916}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: -11.16, z: -36.57}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1625962097}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &894527654
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,306 +533,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1625962096
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1625962097}
-  - component: {fileID: 1625962103}
-  - component: {fileID: 1625962102}
-  - component: {fileID: 1625962101}
-  - component: {fileID: 1625962100}
-  - component: {fileID: 1625962099}
-  - component: {fileID: 1625962098}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1625962097
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625962096}
-  m_LocalRotation: {x: 0.23672895, y: -0.1958883, z: 0.04879399, w: 0.95037174}
-  m_LocalPosition: {x: -0.005039215, y: 0.11266899, z: -0.46375847}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 711847918}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 17.16, y: 0, z: 0}
---- !u!95 &1625962098
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625962096}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f81e275efaf637e48b75b4791f266586, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!81 &1625962099
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625962096}
-  m_Enabled: 1
---- !u!114 &1625962100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625962096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fe9d7cb1ff04cb4ebfdc5419755e800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDist: 0.0029
-  maxSteps: 780
-  maxDist: 380
-  eyeResolution: 2
-  computedW: 3836
-  computedH: 1998
-  dithering: 10.72
-  heatMap: 0
-  stereoSeparationFactor: 2.97
-  cubemap: {fileID: 0}
-  diffuseMapArray: {fileID: 0}
-  alpha: 1
-  fogColor: {r: 0, g: 0, b: 0, a: 1}
-  fogStrength: 1.88
-  zTest: 1
-  zTestSmooth: 0.21
-  lt: 1
-  lightPow: 16
-  pointLightTransform: {fileID: 0}
-  doShadow: 1
-  shadowMaxSteps: 13
-  shadowMaxDist: 90
-  shadowtMin: 0.07
-  shadowSmooth: 0.86
-  shadowStr: 1
-  shadowColor: {r: 0, g: 0, b: 0, a: 0}
-  distGlowNear: 0
-  distGlowFar: 6.89
-  distGlowStr: 0
-  normalsWarning: 000000
-  computeNormals0: 1
-  diffuseMap0: {fileID: 0}
-  useAlgoColorDiffuse0: 0
-  diffuseColor0: {r: 1, g: 1, b: 1, a: 0}
-  kD0: 0
-  emission0: 1
-  specColor0: {r: 1, g: 1, b: 1, a: 0}
-  kS0: 2.57
-  roughness0: 1
-  kRef0: 0
-  fresnelColor0: {r: 1, g: 1, b: 1, a: 0}
-  fPow0: 7.22
-  kF0: 0
-  doGlow0: 1
-  glowColor0: {r: 1, g: 1, b: 1, a: 0}
-  glowCoef0: 6.85
-  glowRemap0: 0.4
-  useAlgoColorGlow0: 0
-  doAoSSS0: 1
-  aoSSSMode0: 3
-  aoSSSSteps0: 10
-  aoSSSDelta0: 3.56
-  aoSSSCoef0: 1
-  aoSSSRemap0: 0.29
-  aoSSSColor0: {r: 0, g: 0, b: 0, a: 0}
-  computeNormals1: 0
-  diffuseMap1: {fileID: 0}
-  useAlgoColorDiffuse1: 0
-  diffuseColor1: {r: 0, g: 0, b: 0, a: 0}
-  kD1: 0
-  emission1: 0
-  specColor1: {r: 0, g: 0, b: 0, a: 0}
-  kS1: 0
-  roughness1: 0
-  kRef1: 0
-  fresnelColor1: {r: 0, g: 0, b: 0, a: 0}
-  fPow1: 0
-  kF1: 0
-  doGlow1: 0
-  glowColor1: {r: 0, g: 0, b: 0, a: 0}
-  glowCoef1: 0
-  glowRemap1: 0
-  useAlgoColorGlow1: 0
-  doAoSSS1: 0
-  aoSSSMode1: 0
-  aoSSSSteps1: 0
-  aoSSSDelta1: 0
-  aoSSSCoef1: 0
-  aoSSSRemap1: 0
-  aoSSSColor1: {r: 0, g: 0, b: 0, a: 0}
-  computeNormals2: 0
-  diffuseMap2: {fileID: 0}
-  useAlgoColorDiffuse2: 0
-  diffuseColor2: {r: 0, g: 0, b: 0, a: 0}
-  kD2: 0
-  emission2: 0
-  specColor2: {r: 0, g: 0, b: 0, a: 0}
-  kS2: 0
-  roughness2: 0
-  kRef2: 0
-  fresnelColor2: {r: 0, g: 0, b: 0, a: 0}
-  fPow2: 0
-  kF2: 0
-  doGlow2: 0
-  glowColor2: {r: 0, g: 0, b: 0, a: 0}
-  glowCoef2: 0
-  glowRemap2: 0
-  useAlgoColorGlow2: 0
-  doAoSSS2: 0
-  aoSSSMode2: 0
-  aoSSSSteps2: 0
-  aoSSSDelta2: 0
-  aoSSSCoef2: 0
-  aoSSSRemap2: 0
-  aoSSSColor2: {r: 0, g: 0, b: 0, a: 0}
-  algoColor0: {r: 0, g: 0.2958831, b: 0.4716981, a: 0}
-  algoColor1: {r: 0.011881431, g: 0.75964975, b: 0.8396226, a: 0}
-  algoColor2: {r: 0.29043147, g: 0.22054112, b: 0.7924528, a: 0}
-  algoColor3: {r: 0, g: 0, b: 0, a: 0}
-  algoFloat0: 1.5
-  algoFloat1: 0
-  algoFloat2: 0
-  algoFloat3: 0
-  mi: 8
-  nearClip: 2
---- !u!114 &1625962101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625962096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a47f941caced23c48b35656c4a3d266a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraSensitivity: 90
-  climbSpeed: 4
-  normalMoveSpeed: 10
-  slowMoveFactor: 0.25
-  fastMoveFactor: 3
---- !u!114 &1625962102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625962096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1625962097}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 1
-  antialiasingMode: 1
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.99
-    motionBlending: 0
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 1
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
---- !u!20 &1625962103
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625962096}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 1
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &1809335787
 GameObject:
   m_ObjectHideFlags: 0

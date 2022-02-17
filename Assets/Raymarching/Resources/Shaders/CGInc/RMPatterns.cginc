@@ -452,7 +452,8 @@ float mandelbulb(float3 p)
     xr = pow(r, 7);
     dr = 6 * xr * dr + 1;
     theta = atan2(c.y, c.x) * 8;
-    phi = asin(clamp(c.z / r, -1,1)) * 8 - _Time.y;
+	//_Time.y control the animation speed
+	phi = asin(clamp(c.z / r, -1, 1)) * 8 - _Time.y * 0.8f;
     r = xr * r;
     c = r * float3(cos(phi) * cos(theta), cos(phi) * sin(theta), sin(phi));
    
